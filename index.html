@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="global.css">
+
+</head>
+<body>
+
+
+  <div class="header">
+    <div class="title">
+      <h5>Things to do</h5>
+    </div>
+    <div class="todo-box-and-button">
+      <div>
+        <input id="todo-input" onchange="addItem()"/>
+      </div>
+      <div>
+        <button id="todo-add" onclick="addItem()">Add</button>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <ul class="todo-list">
+      <li id="list-item"></li>
+      <button id="complete-undo" onclick="completeTask()">Complete</button>
+      <button>Delete</button>
+    </ul>
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+</html>
